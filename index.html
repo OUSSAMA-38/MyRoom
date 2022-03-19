@@ -1,0 +1,146 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>MyRoom</title>
+        
+        <!-- lier la page html avec le css pour ajouter le design -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!-- ajouter une police d'ecriture -->
+        <link href="'https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+
+        <!-- je prend en compte les accents -->
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <!-- Balise pour le haut de page -->
+        <header>
+            <!-- Titre de la page -->
+            <h1 class="titre"><img src="IMAGES/logo.png" alt=""></h1>
+
+            <div class="search-form">
+                <!-- Formulaire de recherche -->
+                <form method="post">
+                                
+                    <div class="form-group">
+                        <label for="provenance">Choice the city</label>
+                        <input type="text" name="provenance" id="provenance" placeholder="Casablanca, Rabat...">
+
+                        <label for="arrivee">Choice the region</label>
+                        <input type="text" name="arrivee" id="arrivee" placeholder="Sidi Bernoussi, El maarif...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="depart">Check-in date</label>
+                        <input type="date" name="depart" id="depart" value="13/04/2020">
+
+                        <label for="retour">Check-out date</label>
+                        <input type="date" name="retour" id="retour" value="14/04/2020">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="adultes">Number of adults</label>
+                        <select name="adultes" id="adultes">
+                            <option selected="selected">0 Adults</option>
+                            <option>1 Adults</option>
+                            <option>2 Adults</option>
+                            <option>3 Adults</option>
+                            <option>4 Adults</option>
+                            <option>5 Adults</option>
+                        </select>
+
+                        <label for="enfants">Number of children</label>
+                        <select name="enfants" id="enfants">
+                            <option selected="selected">0 children</option>
+                            <option>1 children</option>
+                            <option>2 children</option>
+                            <option>3 children</option>
+                            <option>4 children</option>
+                            <option>5 children</option>
+                        </select>
+
+                        <label for="type">Category</label>
+                        <select name="type" id="type">
+                            <option selected="selected">Economy class</option>
+                            <option>CB class</option>
+                        </select>
+                    </div>
+
+                    <div class="button-submit">
+                        <input type="submit" value="Search" name="recherche" id="recherche">
+                    </div>
+                    
+                </form>
+            </div>
+
+        </header>
+
+        <!-- Une section avec les destinations -->
+        <section id="destinations">
+
+            <h3>MyRoom</h3>
+
+            <div class="destinations-group">
+                <!-- destination 1 -->
+                <div class="destination-item barcelone">
+                    <div class="overlay">
+                        <span class="prix">800 MAD</span>
+                        <span class="nom">Mövenpick Hotel </span>
+                    </div>
+                </div>
+
+                <!-- destination 2 -->
+                <div class="destination-item dubai">
+                    <div class="overlay">
+                        <span class="prix">900 MAD</span>
+                        <span class="nom">Kenzi Tower Hotel</span>
+                    </div>
+                </div>
+
+                <!-- destination 3 -->
+                <div class="destination-item philippines">
+                    <div class="overlay">
+                        <span class="prix">Dès 1200</span>
+                        <span class="nom">Hyatt Regency
+                            </span>
+                    </div>
+                </div>
+
+                <!-- destination 4 -->
+                <div class="destination-item paris">
+                    <div class="overlay">
+                        <span class="prix">730 MAD</span>
+                        <span class="nom">Barceló Casablanca</span>
+                    </div>
+                </div>
+
+                <!-- destination 5 -->
+                <div class="destination-item tunis">
+                    <div class="overlay">
+                        <span class="prix">1255 MAD</span>
+                        <span class="nom">Pestana Casablanca</span>
+                    </div>
+                </div>
+
+                <!-- destination 6 -->
+                <div class="destination-item londres">
+                    <div class="overlay">
+                        <span class="prix">1153 MAD</span>
+                        <span class="nom">Le Palace D'Anfa Hotel
+                            </span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Pied de page -->
+
+        <footer>
+            <hr>
+            <p>&copy; 2022 - MyRoom - RES HOTEL - <a href="cgu.html">MyRoom</a> </p>
+        </footer>
+
+    </body>
+</html>
